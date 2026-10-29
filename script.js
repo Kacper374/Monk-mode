@@ -16,12 +16,12 @@ try {
 } catch(_error) {}
 if(isCheckoutReady){
   checkout.href=CHECKOUT_URL;
-  checkout.textContent=`Kup e-book — ${priceLabel} ↗`;
+  checkout.textContent=`Kup cały pakiet — ${priceLabel} ↗`;
   checkout.rel='noopener noreferrer';
-  note.textContent='Po kliknięciu przejdziesz do zewnętrznej, bezpiecznej strony zakupu. Szczegóły dostawy i warunki zakupu znajdziesz podczas finalizacji zamówienia.';
+  note.textContent='Po kliknięciu przejdziesz na stronę operatora sprzedaży. Przed płatnością sprawdź warunki zakupu, wysokość ceny końcowej i sposób dostarczenia plików.';
   status.hidden=true;
   const bottom=document.querySelector('.mobile-buy a');
   bottom.href=CHECKOUT_URL;
   bottom.rel='noopener noreferrer';
-  bottom.textContent=`Kup — ${priceLabel}`;
+  bottom.textContent=`Kup pakiet — ${priceLabel}`;
 }
